@@ -1,0 +1,41 @@
+@use "../utils/variables"  as *;
+@use "../utils/mixin" as *;
+
+.catalog-section {
+    padding: 40px 0;
+
+    .games-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: $space;
+
+        .game-card {
+            @include card-box($space, $card-bg);
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: translateY(-4px);
+            }
+
+            &__title {
+                font-size: 1.25rem;
+                margin-bottom: 8px;
+            }
+
+            &__desc {
+                color: $muted;
+                font-size: 0.95rem;
+                margin-bottom: 15px;
+            }
+
+            &__button {
+                @include custom-btn(transparent, $accent);
+                border: 1px solid $accent;
+                &:hover {
+                    background-color: $accent;
+                    color: $text;
+                }
+            }
+        }
+    }
+}

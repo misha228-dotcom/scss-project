@@ -1,0 +1,70 @@
+*,
+
+*::before,
+
+*::after {
+
+    box-sizing: border-box;
+    /* ширина елемента включає padding і border */
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    /* або той шрифт, що в макеті */
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    color: var(--color-dark);
+
+    background-color: var(--color-bg);
+
+}
+
+
+
+img {
+
+    display: block;
+    /* прибирає зайвий відступ знизу */
+
+    max-width: 100%;
+    /* зображення не виходять за межі контейнера */
+
+    height: auto;
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+ul,
+ol {
+
+    list-style: none;
+
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}

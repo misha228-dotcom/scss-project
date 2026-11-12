@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/main.scss">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">Gaming<span>Zone</span></a>
+            <nav class="header__nav">
+                <a href="#character">Персонаж</a>
+                <a href="#catalog">Каталог</a>
+                <a href="#platform">Платформа</a>
+            </nav>
+            <a href="#catalog" class="header__btn">Почати</a>
+        </div>
+    </header>
+
+    <main>
+ 
+        <section class="character-section" id="character">
+            <div class="container">
+                <h2 class="section-title">Картка персонажа</h2>
+                <article class="character-card">
+                    <img src="img/steve.jpg" alt="Стів" class="character-card__image">
+                    <div class="character-card__info">
+                        <h3 class="character-card__title">Стів</h3>
+                        <p class="character-card__desc">Головний персонаж Minecraft, дослідник і будівельник.</p>
+                        <button class="character-card__button">Обрати</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="catalog-section" id="catalog">
+            <div class="container">
+                <h2 class="section-title">Каталог ігор</h2>
+                <div class="games-grid">
+                    <article class="game-card">
+                        <h3 class="game-card__title">Minecraft</h3>
+                        <p class="game-card__desc">Пісочниця та виживання.</p>
+                        <button class="game-card__button">Детальніше</button>
+                    </article>
+                    <article class="game-card">
+                        <h3 class="game-card__title">Counter-Strike 2</h3>
+                        <p class="game-card__desc">Командний тактичний шутер.</p>
+                        <button class="game-card__button">Детальніше</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="platform-section" id="platform">
+            <div class="container">
+                <h2 class="section-title">Про платформу</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <h3 class="feature-card__title">Ігри</h3>
+                        <p class="feature-card__desc">Великий вибір цікавих проєктів.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 class="feature-card__title">Рейтинг</h3>
+                        <p class="feature-card__desc">Чесні оцінки та огляди.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 class="feature-card__title">Спільнота</h3>
+                        <p class="feature-card__desc">Спілкування з гравцями.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>© 2026 Gaming Zone. Усі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

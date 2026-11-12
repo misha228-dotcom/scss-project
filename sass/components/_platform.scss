@@ -1,0 +1,27 @@
+@use "../utils/variables " as *;
+@use "../utils/mixin " as *;
+
+.platform-section {
+  padding: 40px 0;
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: $space;
+
+    .feature-card {
+      @include card-box($space, $card-bg);
+      text-align: center;
+
+      &__title {
+        color: $accent;
+        margin-bottom: 8px;
+      }
+
+      &__desc {
+        color: $muted;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
