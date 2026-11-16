@@ -1,5 +1,5 @@
-@use "../utils/variables"  as *;
-@use "../utils/mixin" as *;
+@use '../utils/variables' as *;
+@use '../utils/mixin' as *;
 
 .catalog-section {
     padding: 40px 0;
@@ -10,7 +10,7 @@
         gap: $space;
 
         .game-card {
-            @include card-box($space, $card-bg);
+            @include card-box($space, $text);
             transition: transform 0.3s;
 
             &:hover {

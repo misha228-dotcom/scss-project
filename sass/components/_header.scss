@@ -1,8 +1,7 @@
-@use "../utils/variables " as *;
-@use "../utils/mixin "as *;
-
+@use '../utils/variables' as *;
+@use '../utils/mixin' as *;
 header {
-    background-color: $card-bg;
+    background-color: $muted;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     padding: 15px 0;
     position: sticky;
@@ -23,7 +22,7 @@ header {
         font-weight: bold;
         color: $text;
         text-decoration: none;
-        span { color: $accent; }
+        span { color: $text; }
     }
 
     &__nav {

@@ -1,1 +1,224 @@
-/*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #121214;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* ширина елемента включає padding і border */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* або той шрифт, що в макеті */
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-dark);
+  background-color: var(--color-bg);
+}
+
+img {
+  display: block;
+  /* прибирає зайвий відступ знизу */
+  max-width: 100%;
+  /* зображення не виходять за межі контейнера */
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.catalog-section {
+  padding: 40px 0;
+}
+.catalog-section .games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.catalog-section .games-grid .game-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.catalog-section .games-grid .game-card:hover {
+  transform: translateY(-4px);
+}
+.catalog-section .games-grid .game-card__title {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+.catalog-section .games-grid .game-card__desc {
+  color: #a0a0a5;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+.catalog-section .games-grid .game-card__button {
+  background-color: transparent;
+  color: #646cff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 1px solid #646cff;
+}
+.catalog-section .games-grid .game-card__button:hover {
+  background-color: #646cff;
+  color: #ffffff;
+}
+
+.character-section {
+  padding: 40px 0;
+}
+.character-section .character-card {
+  background-color: #1a1a1e;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.character-section .character-card__image {
+  width: 100%;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.character-section .character-card__title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.character-section .character-card__desc {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.character-section .character-card__button {
+  background-color: #646cff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.character-section .character-card__button:hover {
+  background-color: #535bf2;
+}
+
+.platform-section {
+  padding: 40px 0;
+}
+.platform-section .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.platform-section .features-grid .feature-card {
+  background-color: #1a1a1e;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.platform-section .features-grid .feature-card__title {
+  color: #646cff;
+  margin-bottom: 8px;
+}
+.platform-section .features-grid .feature-card__desc {
+  color: #a0a0a5;
+  font-size: 0.95rem;
+}
+
+header {
+  background-color: #a0a0a5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header__logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+header__logo span {
+  color: #ffffff;
+}
+header__nav {
+  display: flex;
+  gap: 20px;
+}
+header__nav a {
+  color: #a0a0a5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+header__nav a:hover {
+  color: #ffffff;
+}
+header__btn {
+  background-color: #646cff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+.footer {
+  background-color: #1a1a1e;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  padding: 20px 0;
+  color: #a0a0a5;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=main.css.map */

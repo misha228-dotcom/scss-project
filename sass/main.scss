@@ -8,93 +8,93 @@
 @use "./utils/mixin";
 @use "./utils/variables";
 
-.character-section {
-    padding: 30px 0;
+// .character-section {
+//     padding: 30px 0;
 
-    .character-card {
-        @include card-box($space, $card-bg);
-        display: grid;
-        grid-template-columns: 220px 1fr;
-        gap: 20px;
+//     .character-card {
+//         @include card-box($space, $card-bg);
+//         display: grid;
+//         grid-template-columns: 220px 1fr;
+//         gap: 20px;
 
-        img {
-            width: 100%;
-            border-radius: 4px;
-            object-fit: cover;
-        }
+//         img {
+//             width: 100%;
+//             border-radius: 4px;
+//             object-fit: cover;
+//         }
 
-        &__title {
-            @include text-style(24px, $text);
-            margin: 0 0 10px;
-        }
+//         &__title {
+//             @include text-style(24px, $text);
+//             margin: 0 0 10px;
+//         }
 
-        &__button {
-            @include custom-btn($accent, $text);
+//         &__button {
+//             @include custom-btn($accent, $text);
 
-            &:hover {
-                background-color: $accent-hover;
-            }
-        }
-    }
-}
-
-
-.catalog-section {
-    padding: 30px 0;
-
-    .games-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: $space;
-
-        .game-card {
-            @include card-box(20px, $card-bg);
-            transition: transform 0.3s;
-
-            &:hover {
-                transform: translateY(-4px);
-            }
-
-            &__title {
-                @include text-style(20px, $text);
-                margin: 0 0 8px;
-            }
-
-            &__button {
-                @include custom-btn(transparent, $accent);
-                border: 1px solid $accent;
-
-                &:hover {
-                    background-color: $accent;
-                    color: $text;
-                }
-            }
-        }
-    }
-}
+//             &:hover {
+//                 background-color: $accent-hover;
+//             }
+//         }
+//     }
+// }
 
 
-.platform-section {
-    padding: 30px 0;
+// .catalog-section {
+//     padding: 30px 0;
 
-    .features-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: $space;
+//     .games-grid {
+//         display: grid;
+//         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+//         gap: $space;
 
-        article {
-            @include card-box(16px, $card-bg);
-            text-align: center;
+//         .game-card {
+//             @include card-box(20px, $card-bg);
+//             transition: transform 0.3s;
 
-            h3 {
-                @include text-style(18px, $accent);
-            }
-        }
-    }
-}
+//             &:hover {
+//                 transform: translateY(-4px);
+//             }
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    color: $muted;
-}
+//             &__title {
+//                 @include text-style(20px, $text);
+//                 margin: 0 0 8px;
+//             }
+
+//             &__button {
+//                 @include custom-btn(transparent, $accent);
+//                 border: 1px solid $accent;
+
+//                 &:hover {
+//                     background-color: $accent;
+//                     color: $text;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// .platform-section {
+//     padding: 30px 0;
+
+//     .features-grid {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         gap: $space;
+
+//         article {
+//             @include card-box(16px, $card-bg);
+//             text-align: center;
+
+//             h3 {
+//                 @include text-style(18px, $accent);
+//             }
+//         }
+//     }
+// }
+
+// .footer {
+//     text-align: center;
+//     padding: 20px;
+//     color: $muted;
+// }

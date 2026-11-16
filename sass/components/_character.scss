@@ -1,5 +1,5 @@
-@use "../utils/variables" as *;
-@use "../utils/mixin "as *;
+@use '../utils/variables' as *;
+@use '../utils/mixin' as *;
 
 .character-section {
     padding: 40px 0;
@@ -20,10 +20,11 @@
         &__title {
             font-size: 1.5rem;
             margin-bottom: 10px;
+            color: $text;
         }
 
         &__desc {
-            color: $muted;
+            color: $text;
             margin-bottom: 15px;
         }
 
