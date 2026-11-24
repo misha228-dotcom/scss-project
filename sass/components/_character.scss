@@ -34,3 +34,52 @@
         }
     }
 }
+
+.character {
+    padding: 30px 0;
+
+    @include desktop {
+        padding: 60px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+            gap: 32px;
+        }
+
+        @include desktop {
+            gap: 60px;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+
+        @include tablet {
+            font-size: 36px;
+        }
+
+        @include desktop {
+            font-size: 48px;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+        border-radius: $radius;
+
+        @include tablet {
+            max-width: 50%;
+        }
+    }
+}

@@ -22,3 +22,15 @@
     font-weight: bold;
     transition: 0.3s;
 }
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
